@@ -15,10 +15,9 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-
-    compile 'com.google.code.gson:gson:2.5'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'junit:junit:4.12'
+    implementation 'com.google.code.gson:gson:2.8.5'
 }
 
 task myJavadocs(type: Javadoc) {
